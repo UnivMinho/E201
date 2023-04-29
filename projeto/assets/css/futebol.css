@@ -21,6 +21,7 @@
 }
 
 
+
 .fut7inT {
   width: 50%;
   float: right;
@@ -91,23 +92,13 @@
   left: 0;
   right: 0;
   z-index: 9999;
+  background-color: #198754;
 }
 
 .navbar a{
   color: white;
   font-size: 25px;
 }
-
-.navbar-nav{
-  padding: 5px;
-}
-
-.navbar-nav .nav-link {
-  color: white;
-  font-size: 25px;
-}
-
-
 
 .navbar-colored {
   background-color: #198754;
@@ -123,3 +114,11 @@ header.masthead {
   background-size: cover;
   height: 750px;
 }
+
+
+#sport4all{
+  text-decoration: none;
+}
+
+
+

@@ -14,16 +14,16 @@
 
 <body>
   
-    <nav id="navbar" class="navbar navbar-light navbar-expand-md py-3">
+    <nav id="navbar" class="navbar navbar-light navbar-expand-md py-2">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#"><span><strong>Sports4All</strong></span></a>
+            <a id="sport4all" class="d-flex align-items-center" href="index.html"><span><strong>Sports4All</strong></span></a>
             <button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#"><strong>Fut 7</strong></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#"><strong>Fut 5</strong></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#"><strong>Futsal</strong></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#"><svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewbox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path></svg></a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color:white;" href="#fut7"><strong>Fut 7</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color:white;" href="#fut5"><strong>Fut 5</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color:white;" href="#futsal"><strong>Futsal</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Perfil.html"><svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewbox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path></svg></a></li>
                 </ul>
             </div>
         </div>
@@ -42,31 +42,7 @@
         </div>
     </header>
 
-    
-    
-    <!--
-    <div id="imgNavbar" data-bss-parallax-bg="true" style="background: url(&quot;assets/img/campoFutebol.jpg&quot;) center / cover;">
-        <nav id="navbar" class="navbar navbar-light navbar-expand-md py-3">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="#"><span style="font-size: 25px;"><strong>Sports4All</strong></span></a>
-                <button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navcol-2">
-                    <ul class="navbar-nav ms-auto" style="padding: 5px;font-size: 25px;">
-                        <li class="nav-item"><a class="nav-link active" href="#" style="font-size: 25px;"><strong>Fut 7</strong></a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#" style="font-size: 25px;"><strong>Fut 5</strong></a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#" style="font-size: 25px;"><strong>Futsal</strong></a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#"><svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewbox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path></svg></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-         <h1 class="desporto">Futebol</h1>
-    </div>
-  
--->
-  
-  
-  
+      
   
   
   
@@ -233,7 +209,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><a class="nav-link active" href="#">9h</a></td>
+                                <td>9h</td>
                                 <td>9h</td>
                                 <td>9h</td>
                                 <td>9h</td>
@@ -345,6 +321,8 @@
                 </div>
             </div>
         </div>
+        </div>
+        
 
 
 
@@ -514,7 +492,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><a class="nav-link active" href="#">9h</a></td>
+                                <td>9h</td>
                                 <td>9h</td>
                                 <td>9h</td>
                                 <td>9h</td>
@@ -644,7 +622,7 @@
             <div class="divisao_tabela">
                 <h1 class="horarios">Horarios:</h1>
                 <div class="table-responsive tabela_horarios">
-                    <table class="table">
+                    <table class="table" id="minha-tabela">
                         <thead>
                             <tr>
                                 <th>Segunda</th>
@@ -771,6 +749,10 @@
             </div>
         </div>
 
+
+
+
+
     </section>
 
     <footer class="text-center">
@@ -788,8 +770,21 @@
         </div>
     </footer>
 
+
+    <script>
+        
+
+        
+
+    </script>
+
+
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/futbol.js"></script>
+
+
+
 
 </body>
 
