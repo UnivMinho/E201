@@ -11,38 +11,38 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
   <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/styles.min.css">
+  <link href="assets/css/tenis.css" rel="stylesheet" />
 </head>
 
 <body style="font-family: Oswald, sans-serif;background: var(--swiper-theme-color);">
 
   <!-- navbar -->
 
-  <nav class="navbar navbar-light navbar-expand-md py-3" style="background: var(--bs-green);">
-    <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span
-          class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"
-          style="background: var(--bs-success);"><img src="assets/img/logo-no-background.png"
-            style="width: 3rem;height: 2rem;margin-top: 5px;"></span><span><strong><span
-              style="color: rgba(255, 255, 255, 0.9);">sports4all</span></strong></span></a><button
-        data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle
-          navigation</span><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navcol-2">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#"><span style="color: rgba(255, 255, 255, 0.9);">Sobre
-                Nós</span></a></li>
-          <li class="nav-item"><a class="nav-link active" href="#campos"><span
-                style="color: rgba(255, 255, 255, 0.9);">Campos</span></a></li>
-          <li class="nav-item"><a class="nav-link active" href="#footer"><span
-                style="color: rgba(255, 255, 255, 0.9);">Contactos</span></a></li>
-          <li class="nav-item"><a class="nav-link active" href="loginPage.html"><span
-                style="color: rgba(255, 255, 255, 0.9);">Login</span></a></li>
-        </ul>
-      </div>
+ 
+ 
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="index.html" style="color: black;">Sport4All</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#sobrenos" style="color: black;">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link" href="#campos" style="color: black;">Campos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer" style="color: black;">Contactos</a></li>
+                <li id="btn-login" class="nav-item"><a class="nav-link" href="loginPage.html" style="color: black;">Login</a></li>
+                <li id="btn-profile" class="nav-item"><a class="nav-link" href="Perfil.html"><svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" viewbox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path></svg></a></li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
+
+
+ 
 
   <!-- secção com descrição e logo da empresa -->
 
-  <div class="container">
+  <div id="sobrenos" class="container">
     <div class="row">
       <div class="col-md-6"><img class="w-100 h-100 fit-cover" src="assets/img/logo-color.png" /></div>
       <div class="col-md-6">
@@ -72,8 +72,7 @@
               <h2 class="fw-bold text-white mb-3"><span style="color: rgb(0, 0, 0);">Futebol</span></h2>
               <p>2 Relvados Sintéticos Fut5<br>2 Relvados Sintéticos Fut7<br>1 Campo de Futsal</p>
               <div class="my-3">
-                <a class="btn btn-primary btn-lg me-2" role="button" href="futebol.html"
-                  style="background: var(--bs-black);border-color: var(--bs-black);"><strong>Ver Campos</strong></a>
+                <a class="btn btn-primary btn-lg me-2" role="button" id="navigate" style="background: var(--bs-black);border-color: var(--bs-black);"><strong>Ver Campos</strong></a>
               </div>
             </div>
           </div>
@@ -111,8 +110,8 @@
             <div class="text-white p-4 p-md-5">
               <h2 class="fw-bold text-white mb-3"><span style="color: rgb(0, 0, 0);">Padel</span></h2>
               <p>1 Court Indoor<br>1 Court Outdoor</p>
-              <div class="my-3"><a class="btn btn-primary btn-lg me-2" role="button" href="#"
-                  style="background: var(--bs-black);border-color: var(--bs-black);"><strong>Ver Courts</strong></a>
+              <div class="my-3">
+                <a class="btn btn-primary btn-lg me-2" role="button" id="navigate" style="background: var(--bs-black);border-color: var(--bs-black);"><strong>Ver Courts</strong></a>
               </div>
             </div>
           </div>
@@ -150,7 +149,7 @@
             <div class="text-white p-4 p-md-5">
               <h2 class="fw-bold text-white mb-3"><span style="color: rgb(0, 0, 0);">Ténis</span></h2>
               <p>1 Court Indoor<br>1 Court Outdoor</p>
-              <div class="my-3"><a class="btn btn-primary btn-lg me-2" role="button" href="#"
+              <div class="my-3"><a class="btn btn-primary btn-lg me-2" role="button" id="navigate"
                   style="background: var(--bs-black);border-color: var(--bs-black);"><strong>Ver Courts</strong></a>
               </div>
             </div>
@@ -208,7 +207,7 @@
               <path d="M8 4.5l4 2l4 1l4 3.5l-2 3.5"></path>
             </svg></div>
           <div class="px-3">
-            <h2 class="fw-bold mb-0">6</h2>
+            <h2 class="fw-bold mb-0">3</h2>
             <p class="mb-0"><strong>Atividades</strong></p>
           </div>
         </div>
@@ -452,6 +451,9 @@
   </footer>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/script.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/index.js"></script>
+  
 </body>
 
 </html>

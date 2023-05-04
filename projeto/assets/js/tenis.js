@@ -1,8 +1,9 @@
 window.addEventListener('DOMContentLoaded', event => {
 
+   
     //funcao para confirmar reserva
     const celulas = document.querySelectorAll('td, th');
-
+ 
     for (let i = 0; i < celulas.length; i++) {
     celulas[i].addEventListener('click', function(event) {
         if (event.target.nodeName === 'TD' || event.target.nodeName === 'TH') {
@@ -27,27 +28,28 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     });
     }
-
-
-   function getParameterByName(name) {
-
-    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-    
-    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)'),
-    
-    results = regex.exec(location.search);
-    
-    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-    
-    }
-    
-    
-    document.getElementById('output').textContent = getParameterByName('login');
-
-
-
-    
-    
-
-
-});
+ 
+ 
+    function getParameterByName(name) {
+ 
+     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+     
+     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)'),
+     
+     results = regex.exec(location.search);
+     
+     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+     
+     }
+     
+     
+     document.getElementById('output').textContent = getParameterByName('login');
+ 
+ 
+ 
+     
+     
+ 
+ 
+ });
+ 
