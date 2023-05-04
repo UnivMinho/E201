@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
     }
 
-//funcao para ver se o login esta feito
+//funcao para ver se o login esta feito e deixa ir para a pagina 
    function getParameterByName(name) {
 
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
