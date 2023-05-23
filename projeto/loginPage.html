@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
   <link rel="stylesheet" href="assets/css/styles.min.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+  <script src="assets/js/login.js"></script>
+
+
 </head>
 
 <body style="font-family: Oswald, sans-serif;">
@@ -57,7 +64,12 @@
                   <button class="btn btn-primary d-block w-100" type="submit"
                     style="background: var(--bs-success);border-color: var(--bs-green);">Sign In
                   </button>
-                  <button
+
+                  <!--button para fazer login com o google-->
+                  <div id="buttonDiv"></div> 
+                  
+                  <!--
+                    <button
                     class="btn btn-primary d-block w-100" type="submit"
                     style="margin-top: 5px;background: var(--bs-green);border-color: var(--bs-green);"><svg
                       xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
@@ -67,6 +79,11 @@
                       </path>
                     </svg>Sign in with Google
                   </button>
+
+                  -->
+                  
+
+
                 </div>
                 <a class="text-muted" href="#" style="color: var(--bs-green);">Forgot your password?</a>
                 <p class="text-muted">Don't have an account? <a href="signUpPage.html" style="color: var(--bs-green);">Register</a></p>
