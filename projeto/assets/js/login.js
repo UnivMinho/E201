@@ -4,7 +4,9 @@ function handleCredentialResponse(response) {
          
     const data = jwt_decode(response.credential)
     console.log(data)
-    
+
+    url = "index.html" + "?login=true";
+    window.location.href = url;
 }
 
 window.onload = function () {
@@ -19,4 +21,7 @@ window.onload = function () {
   google.accounts.id.prompt(); // also display the One Tap dialog
 }
 
+
 //fim login com o google
+
+

@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', event => {
         const botao = document.createElement('button');
         botao.classList.add('btn', 'btn-primary');
         botao.textContent = 'Cancelar';
+        botao.style.backgroundColor = "var(--bs-green)"
         tabela.rows[i].cells[5].appendChild(botao);
     }
     }

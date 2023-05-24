@@ -2,3 +2,21 @@
     margin-top: 5px;
    
 }
+
+.form-control small {
+    visibility: hidden;
+    
+}
+
+
+.form-control.success input{
+    border: 3px solid #4eca64
+}
+
+.form-control.error input{
+    border: 3px solid #Db5a5a
+}
+
+.form-control.error small { 
+    visibility: visible;
+}
