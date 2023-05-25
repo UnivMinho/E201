@@ -41,11 +41,12 @@ window.addEventListener('DOMContentLoaded', event => {
     
     }
     
-    
-    document.getElementById('output').textContent = getParameterByName('login');
 
+    if (getParameterByName('login')=='true' && getParameterByName('data')=='Hello'){
 
+        document.getElementById('imgicon').style 
 
+    }
     
     
 
