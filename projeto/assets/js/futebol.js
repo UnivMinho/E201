@@ -41,9 +41,6 @@ window.addEventListener('DOMContentLoaded', event => {
     
     }
     
-    
-    
-
 
     if (getParameterByName('login')=='true' && getParameterByName('data')=='Hello'){
 

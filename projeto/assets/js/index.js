@@ -22,10 +22,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     if (getParameterByName('login')=='true') {
         btn_profile.style.visibility = 'visible'
-        btn_login.style.visibility = 'block'
-    }else {
-        btn_profile.style.visibility = 'block'
-        btn_login.style.visibility = 'visible'
+        btn_login.style.display = 'none'
     }
 
 })
