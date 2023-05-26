@@ -13,6 +13,25 @@ window.addEventListener('DOMContentLoaded', event => {
             //button para confirmar
             confirmBtn.addEventListener('click', function() {
                
+                const nome = document.getElementById('nome').value;
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('passwordedit').value;
+
+                var resultado = "";
+                
+                for (var i = 0; i < password.length; i++) {
+                    resultado += "*";
+                  }
+
+                
+
+                document.getElementById('nomeutilizador').textContent = nome
+                document.getElementById('emailutilizador').textContent = email
+                document.getElementById('passwordutilizador').textContent = resultado
+
+             
+
+        
             
                 confirmModal.classList.remove('show'); // Remove a classe 'show' para ocultar o modal
                 confirmModal.style.display = 'none'; // Define o estilo 'display' como 'none' para ocultar o modal
