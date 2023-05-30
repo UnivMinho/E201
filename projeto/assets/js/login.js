@@ -1,4 +1,6 @@
 
+
+
 //fazer login com o google
 function handleCredentialResponse(response) {
          
@@ -23,5 +25,7 @@ window.onload = function () {
 
 
 //fim login com o google
+
+
 
 
