@@ -75,11 +75,7 @@ window.addEventListener('DOMContentLoaded', event => {
      
      }
      
-     
-     document.getElementById('output').textContent = getParameterByName('login');
- 
- 
- 
+  
      
      
  

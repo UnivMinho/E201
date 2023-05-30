@@ -43,7 +43,6 @@ window.addEventListener('DOMContentLoaded', event => {
                 confirmModal.style.display = 'none'; // Define o estilo 'display' como 'none' para ocultar o modal
                 document.body.classList.remove('modal-open'); // Remove a classe 'modal-open' para permitir o scroll da página de fundo
                 
-                window.alert("Registado com sucesso!");
             }
                 
 
@@ -92,14 +91,7 @@ window.addEventListener('DOMContentLoaded', event => {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
     
     }
-    
-
-    if (getParameterByName('login')=='true' && getParameterByName('data')=='Hello'){
-
-        document.getElementById('imgicon').style 
-
-    }
-    
+        
     
 
 
