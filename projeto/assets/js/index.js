@@ -144,7 +144,7 @@ document.getElementById('navigate').addEventListener('click', function(event) {
             
             
             if (getParameterByName('login')=='true'){
-                url = "padel.html" + "?login=true";
+                url = "tenis.html" + "?login=true";
                 
             }else {
                 url = "loginPage.html"

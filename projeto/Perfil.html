@@ -20,14 +20,14 @@
   
   <!-- navbar -->
 
-  <nav class="navbar navbar-light navbar-expand-md py-3" style="background: var(--bs-green);}">
+  <nav class="navbar navbar-light navbar-expand-md py-3" style="background: var(--bs-green);">
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html?login=true"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: var(--bs-success);"></span><span><strong><span style="color: rgba(255, 255, 255, 0.9);">Sports4All</span></strong></span></a>
+        <a class="navbar-brand d-flex align-items-center" href="index.html?login=true"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: var(--bs-success);"></span><span><strong><span style="color: rgb(255, 255, 255);">sports4all</span></strong></span></a>
         <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navcol-2">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="reservas.html" style="color: rgba(255, 255, 255, 0.9); font-weight: bold;"><span id="perfil">Minhas reservas</span></a></li>
-          <li class="nav-item"><a id="logout" class="nav-link active" href="index.html" style="color: rgba(255, 255, 255, 0.9); font-weight: bold;"><span>logout</span></a></li>
+          <li class="nav-item"><a class="nav-link active" href="reservas.html" style="color: rgb(255, 255, 255); font-weight: bold;"><span id="perfil">Minhas reservas</span></a></li>
+          <li class="nav-item"><a id="logout" class="nav-link active" href="index.html" style="color: rgb(255, 255, 255); font-weight: bold;"><span>logout</span></a></li>
         </ul>
       </div>
     </div>
@@ -43,26 +43,60 @@
         <div class="d-flex justify-content-center align-items-center"><button class="btn btn-primary" type="button"
             style="background: var(--bs-green);border-color: var(--bs-green);"><strong>Editar</strong></button></div>
       </div>
+      
       <div class="col-md-8">
         <h1><strong>Nome de Utilizador</strong></h1>
-        <p>user</p>
+        <p id="nomeutilizador">user</p>
         <h1><strong>Email</strong></h1>
-        <p>user@gmail.com</p>
+        <p id="emailutilizador">user@gmail.com</p>
         <h1><strong>Password</strong></h1>
-        <p>**********</p>
-        <button class="btn btn-primary" type="button" style="background: var(--bs-green);border-color: var(--bs-green);"><strong>Editar</strong>
-          <svg
-          xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"
-          class="bi bi-pencil-fill" style="color:wheat; margin-left: 5px;">
-          <path
-            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
-          </path>
-        </svg></button>
+        <p id="passwordutilizador">**********</p>
+        
+        <button id="editar2" class="btn btn-primary" type="button" style="background: var(--bs-green);border-color: var(--bs-green);"><strong>Editar</strong></button>
 
-       </p>
       </div>
     </div>
-  </div>
+  </div>~
+
+
+
+
+        <!--modal-->
+        
+            
+                <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="confirmModalLabel">Confirmação de Reserva</h5>
+                        <button id="cancelar2" type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body" id="confirmModalBody">
+                        
+                        <form class="text-center">
+                          <div class="mb-3">
+                            <input id="nome" class="form-control" type="text" name="name" placeholder="Name">
+                            <input id="email" class="form-control" type="email" name="email" placeholder="Email" style="margin: 0px;margin-top: 15px;">
+                          </div>
+                          <div class="mb-3">
+                            <input id="passwordedit" class="form-control" type="password" name="password" placeholder="Password">
+                          </div>
+                        </form>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button id="cancelar" type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button id="confirmBtn" class="btn btn-secondary" type="submit" style="background: var(--bs-success);border-color: var(--bs-green);">confirmar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      <!--fim modal-->
+
+
+
   
   <!-- footer -->
   
@@ -102,6 +136,7 @@
   </footer>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/script.min.js"></script>
+  <script src="assets/js/perfil.js"></script>
 </body>
 
 </html>
