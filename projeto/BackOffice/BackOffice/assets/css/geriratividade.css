@@ -1,0 +1,25 @@
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .col {
+    margin: 10px; /* Ajuste as margens conforme necessário */
+  }
+  
+  .button {
+    text-align: center;
+    /* Outros estilos do botão */
+  }
+
+  .imagem {
+    background-image: url(/assets/img/logo-no-background.png);
+  }
